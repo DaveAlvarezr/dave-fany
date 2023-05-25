@@ -1,6 +1,4 @@
 export function kata() {
-  const element = document.querySelector("p")
+  const element = document.querySelector("section:nth-child(2) p")
   element.classList.add("star-wars");
-  // document[1].innerHTML = `<p class="star-wars">Luke, I'm your father</p>`;
-
 }
