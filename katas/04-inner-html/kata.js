@@ -1,6 +1,4 @@
-export function kata() {
-  document.body.innerHTML = `<main>
-        <article>
+const article1 = `<article>
             <img src="https://picsum.photos/id/28/800/300">
             <div class="content">
                 <p class="category">travel</p>
@@ -11,8 +9,8 @@ export function kata() {
                     eligendi
                     neque, qui quas esse.</p>
             </div>
-        </article>
-        <article>
+        </article>`
+const article2 = `<article>
             <img src="https://picsum.photos/id/35/800/300">
             <div class="content">
                 <p class="category">travel</p>
@@ -23,8 +21,8 @@ export function kata() {
                     eligendi
                     neque, qui quas esse.</p>
             </div>
-        </article>
-        <article>
+        </article>`
+const article3 = `<article>
             <img src="https://picsum.photos/id/37/800/300">
             <div class="content">
                 <p class="category">travel</p>
@@ -35,6 +33,10 @@ export function kata() {
                     eligendi
                     neque, qui quas esse.</p>
             </div>
-        </article>
+        </article>`
+const articles = [article1, article2, article3].join("\n")
+export function kata() {
+  document.body.innerHTML = `<main>
+    ${articles}
     </main>`;
 }
